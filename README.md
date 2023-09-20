@@ -1,4 +1,6 @@
-# yam_cpp_parse
+# yaml_cpp_parse
+
+---
 
 ### How to build?
 
@@ -21,5 +23,7 @@ $ sudo apt-get install libyaml-cpp-dev
 
 and modify CMakeLists.txt to ```find_package(yaml-cpp REQUIRED)```.
 
+---
 
-* [Reference link](https://www.reddit.com/r/cpp_questions/comments/bdxcp0/im_a_beginner_to_c_help_me_install_and_use/)
+#### Reference
+* [how to use yaml cpp w/ CMakeLists.txt](https://www.reddit.com/r/cpp_questions/comments/bdxcp0/im_a_beginner_to_c_help_me_install_and_use/)
