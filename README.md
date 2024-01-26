@@ -27,3 +27,24 @@ and modify CMakeLists.txt to ```find_package(yaml-cpp REQUIRED)```.
 
 #### Reference
 * [how to use yaml cpp w/ CMakeLists.txt](https://www.reddit.com/r/cpp_questions/comments/bdxcp0/im_a_beginner_to_c_help_me_install_and_use/)
+
+
+```c++
+static default_random_engine gen;
+
+float ParticleFilter::getRandom(float low, float high)
+{
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_real_distribution<float> dis(low, high);
+    return dis(gen);
+}
+
+float ParticleFilter::getRandomGaussian(float mean, float sigma)
+{
+    random_device rd;
+    mt19937 gen(rd());
+    normal_distribution<float> distribution(mean, sigma);
+    return distribution(rd);
+}
+```
